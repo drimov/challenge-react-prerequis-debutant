@@ -1,0 +1,769 @@
+@font-face {
+    font-family: 'Lelo';
+    src: url("../fonts/Lelo-Light.ttf");
+}
+
+@font-face {
+    font-family: 'LeloMedium';
+    src: url("../fonts/Lelo-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'FuturaPT';
+    src: url("../fonts/FuturaPTBold.otf");
+}
+
+@font-face {
+    font-family: 'FuturaPTDemi';
+    src: url("../fonts/FuturaPTDemi.otf");
+}
+
+:root {
+    --primary-color: #838586;
+    --secondary-color: white;
+    --third-color: #02bb96;
+    --fourth-color: #242424;
+    --text-underline: solid 1px rgba(2, 187, 150, .3);
+
+    --space-little-flex: 2.5vw;
+    --space-basic-flex: 5.5vw;
+
+    --space-little-fixed: 10px;
+    --space-basic-fixed: 20px;
+
+    --letter-space: .15em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    font-family: 'Lelo';
+    margin: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-family: 'Lelo-Medium';
+}
+
+header {
+    display: grid;
+}
+
+/*add*/
+.header-nav-enable {
+    grid-template-rows: 120px auto;
+}
+
+
+header>section>h1 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+#menu>li>a, .menu-mobile-enable>nav>ul>li>a {
+    text-decoration: solid;
+}
+
+
+/*  WHO?  */
+#who>h3 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin: 10vh 0vh 2.5vh 2.5vh;
+    letter-spacing: var(--letter-space);
+    font-size: 0.8em;
+}
+
+
+#who>section>div>p {
+    font-size: 1em;
+}
+
+.text-strong {
+    font-weight: bold;
+}
+
+.text-green {
+    color: var(--third-color);
+}
+
+.text-underline {
+    border-bottom: var(--text-underline);
+}
+
+button {
+    border: solid 2px;
+    border-radius: 5px;
+}
+
+#who>section>button {
+    background-color: var(--secondary-color);
+    padding: 15px 30px;
+    margin: 15px 0px;
+    font-family: 'FuturaPT';
+    font-size: 0.8em;
+}
+
+#vision>p:nth-last-child(n+3) {
+    font-family: 'LeloMedium';
+    font-size: 1.75em;
+    margin: 0%;
+    padding: 0%;
+}
+
+#vision>p:nth-child(4) {
+    text-align: end;
+}
+
+#vision>p:nth-child(2) {
+    padding-bottom: 15px;
+}
+
+/*  PORTFOLIO  */
+
+#portfolio {
+    margin-top: 30px;
+}
+
+#portfolio>article {
+    padding: var(--space-basic-flex);
+    /* margin: var(--space-basic-flex); */
+}
+
+#portfolio>section:first-child {
+    margin: 95px var(--space-basic-flex);
+}
+
+#portfolio>section>h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0%;
+}
+
+
+.article-brand>div>button {
+    font-family: 'FuturaPT';
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: var(--letter-space);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    background-color: var(--fourth-color);
+    border: solid 1px var(--fourth-color);
+    margin: 25px 40px;
+    padding: 25px 40px;
+}
+
+
+#portfolio>article {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#portfolio>article:nth-last-child(2n) {
+    justify-content: flex-start;
+}
+
+#portfolio>article:nth-last-child(2n+1) {
+    justify-content: flex-end;
+}
+
+
+
+.article-brand>div>section>h3 {
+    margin: 10px 0px;
+    font-size: .85em;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-space);
+}
+
+.article-brand>div>section>p::first-letter {
+    text-transform: uppercase;
+}
+
+/* BACKGROUND PARALLAX */
+#parallax-header {
+    background: url("../images/BBN-head-mobile.jpg");
+}
+
+
+#parallax-eredus {
+    background: url("../images/BBN-Lead-Erudus.jpg");
+}
+
+#parallax-minimun {
+    background: url("../images/BBN-Lead-Minimum.jpg");
+}
+
+#parallax-citizen {
+    background: url("../images/BBN-Lead-Citizen.jpg");
+}
+
+#parallax-novlr {
+    background: url("../images/BBN-Lead-Novlr.jpg");
+}
+
+#parallax-sopost {
+    background: url("../images/BBN-Lead-SoPost-alt.jpg");
+}
+
+#parallax-utopy {
+    background: url("../images/BBN-Lead-Utopy.jpg");
+}
+
+#parallax-team-mum {
+    background: url("../images/BBN-Lead-TeamMum.jpg");
+}
+
+#parallax-ride-africa {
+    background: url("../images/BBN-Lead-RideAFrica-alt.jpg");
+}
+
+#parallax-little-inventors {
+    background: url("../images/BBN-Lead-LittleInventors.jpg");
+}
+
+#parallax-child {
+    background: url("../images/BBN-Lead-Child.jpg");
+}
+
+#parallax-whosit {
+    background: url("../images/BBN-Lead-WW.jpg");
+}
+
+#parallax-handbook {
+    background: url("../images/BBN-Lead-LIhandbook.jpg");
+}
+
+#parallax-header {
+    background-attachment: fixed;
+    background-position: center right;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+#see-more>section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#see-more>section>h2 {
+    padding: 25px;
+}
+
+#see-more>section>h2 {
+    font-size: 2em;
+}
+
+#see-more>section>h2,
+#see-more>section>button {
+    font-family: 'FuturaPTDemi';
+}
+
+#see-more>section>button {
+    font-family: 'FuturaPT';
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    padding: 25px 40px;
+    letter-spacing: 0.2em;
+    font-size: .8em;
+}
+
+/*  FOOTER  */
+footer {
+    background-color: #303030;
+}
+
+footer>section>h1:first-child {
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+footer>section:nth-child(2)>section {
+    color: var(--primary-color);
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+.footer-underline-title {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#last-instagram>div {
+    display: grid;
+}
+
+#footer-down>h1 {
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+#social-network>a>img {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0px 10px 0px 0px;
+}
+
+/* PHONE */
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+
+    .article-brand {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .article-brand>div {
+        margin: auto;
+    }
+
+    .article-brand>div>section {
+        display: none;
+    }
+
+    #parallax-eredus, #parallax-minimun, #parallax-citizen, #parallax-novlr,
+    #parallax-sopost, #parallax-utopy, #parallax-team-mum, #parallax-ride-africa, #parallax-little-inventors, #parallax-child, #parallax-whosit, #parallax-whosit, #parallax-handbook {
+        background-attachment: fixed;
+        background-position: 80% 50%;
+        background-repeat: no-repeat;
+        background-size: 380vw;
+        min-height: 500px;
+    }
+
+    #parallax-minimun, #parallax-novlr,
+    #parallax-utopy, #parallax-ride-africa, #parallax-child, #parallax-handbook {
+        background-position: 15% 50%;
+    }
+
+    #see-more {
+        margin: 75px var(--space-basic-flex);
+    }
+
+    /*  FOOTER  */
+    footer {
+        font-size: 1.25em;
+        padding: var(--space-basic-flex) var(--space-basic-flex) 0px var(--space-basic-flex);
+    }
+
+    #last-instagram>div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+
+    #last-instagram>div>img {
+        height: 130px;
+    }
+
+    #last-instagram>div {
+        column-gap: 16px;
+        row-gap: 16px;
+        margin-bottom: 150px;
+    }
+
+    #last-instagram {
+        margin-top: 50px;
+    }
+
+    #about {
+        padding: 0px 0px 50px 0px;
+    }
+
+}
+
+/* TABLET */
+@media only screen and (min-width: 426px) and (max-width:768px) {
+
+    .article-brand>div>section {
+        padding: 0% 10%;
+    }
+
+    .article-brand:last-child>div>button {
+        margin: 5% 20%;
+    }
+
+    #parallax-eredus, #parallax-minimun, #parallax-citizen, #parallax-novlr,
+    #parallax-sopost, #parallax-utopy, #parallax-team-mum, #parallax-ride-africa, #parallax-little-inventors, #parallax-child, #parallax-whosit, #parallax-whosit, #parallax-handbook {
+        background-attachment: fixed;
+        background-position: 82.5% 0%;
+        background-size: 175vh;
+        min-height: 80vh;
+        /* min-height: 500px; */
+    }
+
+    #parallax-minimun, #parallax-novlr,
+    #parallax-utopy, #parallax-ride-africa, #parallax-child, #parallax-handbook {
+        background-position: 25% 10%;
+    }
+
+    /*  SEE MORE  */
+    #see-more {
+        height: 320px;
+    }
+
+    #see-more>section {
+        margin: 75px;
+    }
+
+}
+
+/* PHONE + TABLET */
+@media only screen and (min-width: 320px) and (max-width:768px) {
+
+    /* Header */
+
+    header>section {
+        padding: 30vh 2.5vh;
+    }
+
+    .menu-icon {
+        width: 20px;
+    }
+
+    #logo {
+        width: 205px;
+    }
+
+    nav {
+        height: 120px;
+    }
+
+    .nav-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--secondary-color);
+        padding: var(--space-little-fixed) 35px var(--space-basic-fixed);
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .button-close-enable {
+        padding: 20px;
+        border: 1px solid var(--fourth-color);
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: black;
+        border-radius: 0;
+    }
+
+    .button-close-enable>img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .header-enable {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: var(--secondary-color);
+    }
+
+    .header-nav-disable,
+    .menu-mobile-disable,
+    .button-close-disable {
+        display: none;
+    }
+
+    .menu-icon {
+        width: 20px;
+    }
+
+    .menu-mobile-enable {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 20px 35px;
+    }
+
+    .menu-mobile-enable>nav>ul>li {
+        list-style: none;
+        margin: 25px 0px;
+    }
+
+    .menu-mobile-enable>nav>ul>li:nth-last-child(1) {
+        margin: 40px 0px;
+    }
+
+    .menu-mobile-enable>nav>ul>li>a {
+        text-decoration: solid;
+        color: black;
+        letter-spacing: var(--letter-space);
+    }
+
+    #who>section {
+        margin: var(--space-basic-flex);
+    }
+
+    /* FOOTER */
+    #social-network>div {
+        margin-bottom: 30px;
+    }
+
+    #about {
+        font-size: .8em;
+        font-weight: 700;
+    }
+
+    #about>p {
+        margin: 15px 0px;
+    }
+
+    #footer-down>section {
+        margin: 0px 0px 50px 0px;
+    }
+}
+
+
+/* TABLET  + DESKTOP*/
+@media only screen and (min-width: 420px) {
+    footer {
+        display: grid;
+        grid-template-areas:
+            "c1 c1 c1 c1"
+            "c2 c2 . ."
+            "c2 c2 . .";
+        font-size: 1.5em;
+        padding: var(--space-basic-flex) var(--space-basic-flex) 0px var(--space-basic-flex);
+    }
+
+    #last-instagram {
+        grid-area: c1;
+    }
+
+    #last-instagram>div>img {
+        width: calc(80vw/4);
+    }
+
+    #last-instagram>div {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        column-gap: 16px;
+        row-gap: 16px;
+        margin-bottom: 75px;
+    }
+
+    #footer-down {
+        grid-area: c2;
+        display: grid;
+        grid-template-areas:
+            "f1 f2"
+            ". ."
+            "f3 . "
+            "f4 .";
+    }
+
+    #social-network {
+        grid-area: f1;
+    }
+
+    #footer-down>section>:first-child>h1 {
+        grid-area: f3;
+    }
+
+    #footer-down>section {
+        grid-area: f3;
+    }
+
+    #about {
+        grid-area: f2;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header>section {
+        padding: 27.5vh 27.5vw 32.5vh 20vw;
+    }
+
+    header>section>h1 {
+        margin-bottom: 30px;
+    }
+
+    #parallax-header {
+        background-size: cover;
+        background-position: 0% 0%;
+    }
+
+    #logo {
+        width: 215px;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .header-nav {
+        grid-template-rows: 200px auto;
+    }
+
+    nav {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    nav>ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav>ul>li {
+        list-style: none;
+        letter-spacing: 0.1em;
+        font-size: 16px;
+        font-family: "LeloMedium";
+        align-self: stretch;
+        margin: auto;
+    }
+
+    nav>ul>li:nth-child(2) {
+        padding: 0px 40px;
+    }
+
+    .nav-icons>a {
+        display: none;
+    }
+
+    #menu>li>a {
+        color: black;
+    }
+
+    /*  WHO?  */
+    #who {
+        display: grid;
+        grid-template-areas:
+            "w1 w2"
+            "w3 w2"
+            "w3 .";
+        grid-auto-flow: column;
+        margin: 40px 15px 0px 15px;
+    }
+
+    #who>h3 {
+        grid-area: w1;
+        margin: 50px 0 0 40px;
+    }
+
+    #who>section,
+    #vision {
+        padding: 0px 40px;
+    }
+
+    #who>section:nth-child(2) {
+        grid-area: w3;
+        margin: 15px 75px 0px 0px;
+        grid-row: auto;
+    }
+
+    #who>section:nth-child(2)>div>p {
+        padding: 10px 0px;
+    }
+
+    #who>section:last-child {
+        grid-area: w2;
+        margin: 50px 0px 10px 10%;
+        line-height: 2.5em;
+    }
+
+    #who>section>div>p,
+    #vision>p:nth-last-child() {
+        font-size: .8em;
+    }
+
+    #vision>p:nth-last-child(n+3) {
+        font-size: 2.25em;
+    }
+
+    #vision>p:nth-last-child(3) {
+        margin: 10px 0px;
+    }
+
+    #vision>p:nth-last-child(2) {
+        margin-top: 35px;
+    }
+
+    /*  PORTFOLIO  */
+
+    #portfolio {
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .article-brand {
+        padding: var(--space-basic-flex);
+    }
+
+    .article-brand>div>section {
+        margin: 5% 20%;
+    }
+
+    #parallax-eredus, #parallax-minimun, #parallax-citizen, #parallax-novlr,
+    #parallax-sopost, #parallax-utopy, #parallax-team-mum, #parallax-ride-africa, #parallax-little-inventors, #parallax-child, #parallax-whosit, #parallax-whosit, #parallax-handbook {
+        background-attachment: fixed;
+        background-position: 92.5% 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-size:130vh; */
+        min-height: 85vh;
+        /* min-width: 100vw; */
+    }
+
+    #parallax-minimun, #parallax-novlr,
+    #parallax-utopy, #parallax-ride-africa, #parallax-child, #parallax-handbook {
+        background-position: 25% 10%;
+    }
+
+    /*  SEE MORE  */
+    #see-more {
+        margin: 100px var(--space-basic-flex);
+    }
+
+    /*  FOOTER  */
+    footer {
+        font-size: 1.5em;
+        padding-bottom: 15px;
+    }
+
+    #footer-down {
+        margin-bottom: 15px;
+    }
+
+    #mobile-header,
+    #mobile-button,
+    #mobile-menu {
+        display: none;
+    }
+}
